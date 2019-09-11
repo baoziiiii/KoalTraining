@@ -1,0 +1,33 @@
+【目录】
+    java/src/bwq/SymmetricEncription:  DES/3DES/AES加密解密
+    java/src/bwq/Digest: 摘要
+    java/src/bwq/HMAC: 带密钥的MAC
+实践1A：DES/AES加解密，Digest/HMAC计算,
+采用jdk和bouncycastle库实现的功能要交互验证
+将加密结果采用16进制数和Base64字符串两种模式进行输出
+使用common-codec中提供的一些类和辅助方法
+
+【目录】
+    java/src/bwq/BlobStore：XML采用dom4j解析
+实践1B：实现Java版本的EncryptedBlobStore(http://git.koal.com/training/cplusplus/wikis/practice-EncryptedBlobStore)
+附加要求1：使用junit进行单元测试
+附加要求2：至少支持XML和Sqlite两种存储模式
+附加要求3：在开发前列出任务所需的知识点，并对完成整个任务需要代码量和工作量进行预估
+附加要求4：在开发之前进行对本任务进行简单的设计，比如数据库的字段、XML的格式，可能的类及类之间的关系
+注：其中要求1、2由实现的代码证明，要求3和4需要在实现者仓库的wiki中有明确的工作成果
+
+【目录】
+    java/src/bwq/RSATool：BC实现P7签名/验签/加密/解密
+【wiki】
+    http://git.koal.com/baowenqiang/KoalTrainingProject/wikis/%E5%AE%9E%E8%B7%B52-PKCS%237%E7%AD%BE%E5%90%8D/%E9%AA%8C%E7%AD%BE/%E5%AE%9E%E8%B7%B52-PKCS%237%E7%AD%BE%E5%90%8D%E9%AA%8C%E7%AD%BE%E5%8A%A0%E8%A7%A3%E5%AF%86%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91
+实践2：PKCS#7签名/验签，PKCS#7数字信封加密/解密（多人）
+具体要求
+实现一个console风格的JAVA命令行程序。
+实现以下命令:
+  -s:  签名
+  -v:  验证
+  -e:  解析并展示证书扩展项
+  -f:  用于操作的PFX证书或CER证书
+  -i:  指定输入文件
+  -o:  指定输出文件
+签名/解密证书为本人的PFX证书，验证/加密用本人的CER证书。

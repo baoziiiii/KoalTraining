@@ -1,3 +1,37 @@
+【Contents】
+    Java/src/bwq/SymmetricEncription: DES/3DES/AES encryption and decryption
+    Java/src/bwq/Digest: Summary
+    Java/src/bwq/HMAC: MAC with key
+Practice 1A: DES/AES encryption and decryption, Digest/HMAC calculation,
+The functions implemented by the jdk and bouncycastle libraries are interactively verified.
+The encryption result is output in two modes: hexadecimal and Base64.
+Use some of the classes and helper methods provided in common-codec
+
+【Contents】
+    Java/src/bwq/BlobStore: XML is parsed by dom4j
+Practice 1B: Implementing the Java version of EncryptedBlobStore (http://git.koal.com/training/cplusplus/wikis/practice-EncryptedBlobStore)
+Additional requirement 1: Unit testing with junit
+Additional requirement 2: Support at least XML and Sqlite storage modes
+Additional requirement 3: List the knowledge points required for the task before development, and estimate the amount of code and workload required to complete the entire task.
+Additional Requirement 4: Perform a simple design of this task prior to development, such as database fields, XML format, possible classes, and relationships between classes
+Note: Requirements 1 and 2 are certified by the implementation code, and requirements 3 and 4 require clear work results in the wiki of the implementer's repository.
+
+【Contents】
+    Java/src/bwq/RSATool: BC implements P7 signature/checking/encryption/decryption
+[wiki]
+    http://git.koal.com/baowenqiang/KoalTrainingProject/wikis/%E5%AE%9E%E8%B7%B52-PKCS%237%E7%AD%BE%E5%90%8D/%E9%AA% 8C%E7%AD%BE/%E5%AE%9E%E8%B7%B52-PKCS%237%E7%AD%BE%E5%90%8D%E9%AA%8C%E7%AD%BE%E5 %8A%A0%E8%A7%A3%E5%AF%86%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91
+Practice 2: PKCS #7 signature / check, PKCS #7 digital envelope encryption / decryption (multiple)
+Specific requirements
+Implement a console style JAVA command line program.
+Implement the following command:
+  -s: signature
+  -v: verify
+  -e: parse and display certificate extensions
+  -f: PFX certificate or CER certificate for operation
+  -i: specify input file
+  -o: specify the output file
+The signature/decryption certificate is my PFX certificate, and I am using my CER certificate for verification/encryption.
+
 【目录】
     java/src/bwq/SymmetricEncription:  DES/3DES/AES加密解密
     java/src/bwq/Digest: 摘要
